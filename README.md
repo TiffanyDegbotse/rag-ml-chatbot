@@ -88,7 +88,6 @@ Type your AI/ML questions and get context-aware answers!
 
 ## Notes
 
-- The chatbot uses the **Together API** for natural language generation, which requires an API key and may incur costs depending on usage.  - This project is a great starting point for building domain-specific chatbots on niche datasets.
-
+- The chatbot uses the **Together API** for natural language generation, which requires an API key and may incur costs depending on usage.
 ---
 
