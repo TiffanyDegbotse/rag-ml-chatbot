@@ -38,60 +38,63 @@ This project builds a Q&A chatbot that can answer questions based on a specializ
 ### Installation
 
 1. Clone the repository  
-```bash
-git clone https://github.com/TiffanyDegbotse/rag-ml-chatbot.git
-cd rag-ml-chatbot
-Install dependencies
+   `git clone https://github.com/TiffanyDegbotse/rag-ml-chatbot.git`  
+   `cd rag-ml-chatbot`
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Set your Together API key (recommended)
+2. Install dependencies  
+   `pip install -r requirements.txt`
 
-bash
-Copy
-Edit
-export TOGETHER_API_KEY="your_api_key_here"
-Usage
-1. Data extraction and preprocessing
-Run the notebook notebooks/data_extraction.ipynb or corresponding scripts to download and preprocess AI/ML Wikipedia articles.
+3. Set your Together API key (recommended)  
+   `export TOGETHER_API_KEY="your_api_key_here"`
 
-2. Generate embeddings and index
-bash
-Copy
-Edit
-python scripts/embed_and_index.py
-3. Run the chatbot
-bash
-Copy
-Edit
-python scripts/rag_chatbot.py
+---
+
+## Usage
+
+### 1. Data extraction and preprocessing  
+Run the notebook `notebooks/data_extraction.ipynb` or corresponding scripts to download and preprocess AI/ML Wikipedia articles.
+
+### 2. Generate embeddings and index  
+`python scripts/embed_and_index.py`
+
+### 3. Run the chatbot  
+`python scripts/rag_chatbot.py`
+
 Type your AI/ML questions and get context-aware answers!
 
-Project Structure
-graphql
-Copy
-Edit
+---
+
+## Project Structure
+
 ai-ml-document-chatbot/
 │
 ├── data/
-│   ├── raw/                  # Raw downloaded Wikipedia articles
-│   └── processed/            # Cleaned and chunked documents
+│ ├── raw/ # Raw downloaded Wikipedia articles
+│ └── processed/ # Cleaned and chunked documents
 │
 ├── notebooks/
-│   └── data_extraction.ipynb  # Data extraction and preprocessing notebook
+│ └── data_extraction.ipynb # Data extraction and preprocessing notebook
 │
 ├── scripts/
-│   ├── download_wiki.py       # Script to download Wikipedia AI/ML articles
-│   ├── preprocess.py          # Text cleaning and chunking functions
-│   ├── embed_and_index.py     # Embedding and FAISS index creation
-│   └── rag_chatbot.py         # RAG chatbot code integrating Together API
+│ ├── download_wiki.py # Script to download Wikipedia AI/ML articles
+│ ├── preprocess.py # Text cleaning and chunking functions
+│ ├── embed_and_index.py # Embedding and FAISS index creation
+│ └── rag_chatbot.py # RAG chatbot code integrating Together API
 │
-├── requirements.txt           # Python dependencies
-├── README.md                  # This file
+├── requirements.txt # Python dependencies
+├── README.md # This file
 └── .gitignore
-Notes
-The chatbot uses the Together API for natural language generation, which requires an API key and may incur costs depending on usage.
 
-This project is a great starting point for building domain-specific chatbots on niche datasets.
+
+
+---
+
+## Notes
+
+- The chatbot uses the **Together API** for natural language generation, which requires an API key and may incur costs depending on usage.  - This project is a great starting point for building domain-specific chatbots on niche datasets.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
