@@ -66,25 +66,6 @@ Type your AI/ML questions and get context-aware answers!
 
 ## Project Structure
 
-ai-ml-document-chatbot/
-│
-├── data/
-│ ├── raw/ # Raw downloaded Wikipedia articles
-│ └── processed/ # Cleaned and chunked documents
-│
-├── notebooks/
-│ └── data_extraction.ipynb # Data extraction and preprocessing notebook
-│
-├── scripts/
-│ ├── download_wiki.py # Script to download Wikipedia AI/ML articles
-│ ├── preprocess.py # Text cleaning and chunking functions
-│ ├── embed_and_index.py # Embedding and FAISS index creation
-│ └── rag_chatbot.py # RAG chatbot code integrating Together API
-│
-├── requirements.txt # Python dependencies
-├── README.md # This file
-└── .gitignore## Project Structure
-
 - ai-ml-document-chatbot/
   - data/
     - raw/                  (Raw downloaded Wikipedia articles)
