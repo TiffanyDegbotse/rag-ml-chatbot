@@ -83,7 +83,23 @@ ai-ml-document-chatbot/
 │
 ├── requirements.txt # Python dependencies
 ├── README.md # This file
-└── .gitignore
+└── .gitignore## Project Structure
+
+- ai-ml-document-chatbot/
+  - data/
+    - raw/                  (Raw downloaded Wikipedia articles)
+    - processed/            (Cleaned and chunked documents)
+  - notebooks/
+    - data_extraction.ipynb (Data extraction and preprocessing notebook)
+  - scripts/
+    - download_wiki.py      (Script to download Wikipedia AI/ML articles)
+    - preprocess.py         (Text cleaning and chunking functions)
+    - embed_and_index.py    (Embedding and FAISS index creation)
+    - rag_chatbot.py        (RAG chatbot code integrating Together API)
+  - requirements.txt        (Python dependencies)
+  - README.md               (This file)
+  - .gitignore
+
 
 
 
@@ -95,6 +111,3 @@ ai-ml-document-chatbot/
 
 ---
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
